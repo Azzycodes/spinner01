@@ -1,9 +1,9 @@
-const order = function(char, increment) {
+const order = (char, increment) => {
   setTimeout(() => {
     process.stdout.write(`\r${char}   `);
-  },increment);
+  }, increment);
 };
-const rotate = function() {
+const rotate = () => {
   let charArray = ["|","/","-","\\", "|", "/","-","\\"];
   let delay = 300;
   for (let char of charArray) {
